@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>NBA Predictions</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="box-container">
+            <h1>NBA Prediction</h1>
+            <h3>Neural Network</h3>
+            <div class="form-file">
+                <div class="file-upload">
+                    <div class="file-select">
+                        <div class="file-select-button" id="fileName">Selecciona archivo csv</div>
+                        <div class="file-select-name" id="noFile">Ningún archivo seleccionado</div>
+                        <input type="file" name="csv" id="inputCSV">
+                    </div>
+                </div>
+                <button class="button-train" id="btnTrain">Entrenar</button>
+            </div>
+            <div class="form-prediction">
+                <div class="container-select">
+                    <select class="select-team" name="teams" id="selectHomeTeam">
+                        <option value="0">Selecciona equipo residente</option>
+                    </select>
+                    <h3>VS</h3>
+                    <select class="select-team" name="teams" id="selectVisitorTeam">
+                        <option value="0">Selecciona equipo visitante</option>
+                    </select>
+                </div>
+                <button id="btnPredict">Predecir</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+<script src="js/main.js"></script>
+
+</html>
